@@ -17,3 +17,5 @@ def subArraySum(arr, n, s):
 arr = [1, 2, 3, 7, 5]
 x, y = subArraySum(arr, 5, 12)
 print(x, y)
+
+Output: 2,4  (As elements between index 2 and 4 add upto 15)
