@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+int max(int a,int b){
+    int c;
+    if(a>b){
+        c=a;
+    }
+    else if(b>a){
+        c=b;
+    }
+    else{
+        c=a;
+    }
+    return c;
+}
+int min(int a,int b){
+    int c;
+    if(a>b){
+        c=b;
+    }
+    else if(b>a){
+        c=a;
+    }
+    else{
+        c=a;
+    }
+    return c;
+}
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    int res = min(a,b);
+    while(res>0){
+        if(a%res==0&&b%res==0){
+            break;
+        }
+        res--;
+    }
+    cout<<res<<endl;
+    return 0;
